@@ -1,8 +1,8 @@
 services:
   python:
     build: .
-    stdin_open: true # docker run -i
-    tty: true        # docker run -t
-    command: sh -c "tail -f /dev/null"
+    # stdin_open: true # docker run -i
+    # tty: true        # docker run -t
+    # command: sh -c "tail -f /dev/null"
     volumes:
       - .:/usr/src/app
