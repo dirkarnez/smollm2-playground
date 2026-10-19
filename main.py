@@ -6,7 +6,7 @@ def main():
   print("hello world")
   checkpoint = "HuggingFaceTB/SmolLM2-135M-Instruct"
   
-  device = "cuda" # for GPU usage or "cpu" for CPU usage
+  device = "cpu" # for GPU usage or "cpu" for CPU usage
   tokenizer = AutoTokenizer.from_pretrained(checkpoint)
   # for multiple GPUs install accelerate and do `model = AutoModelForCausalLM.from_pretrained(checkpoint, device_map="auto")`
   model = AutoModelForCausalLM.from_pretrained(checkpoint).to(device)
